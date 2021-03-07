@@ -1,0 +1,34 @@
+@topNavHeight: 90px;
+@height: 200px;
+@mainHeight: @height * 2;
+
+.page-wrapper {
+  text-align: center;
+  .top-nav {
+    height: @topNavHeight;
+    background-color: var(--top-color);
+  }
+  .left-first {
+    height: @height;
+    background-color: var(--left-first-color);
+  }
+  .left-second {
+    height: @height;
+    background-color: var(--left-second-color);
+  }
+  .main {
+    height: @mainHeight;
+    background-color: var(--main-color);
+  }
+  .right {
+    height: @mainHeight;
+    background-color: var(--right-color);
+  }
+  .bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: @height;
+    background-color: var(--bottom-color);
+  }
+}
